@@ -26,6 +26,11 @@ p6df::modules::dev::external::brew() {
   brew install terraform-inventory
   brew install terraform-provisioner-ansible
 
+  brew install consul
+  brew install consul-template
+  brew install envconsul
+
+  brew install packer
 }
 
 p6df::modules::dev::init() {
