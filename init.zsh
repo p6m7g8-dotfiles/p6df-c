@@ -5,15 +5,21 @@ p6df::modules::dev::deps()    {
 
 p6df::modules::dev::external::brew() {
 
+# https://github.com/moul/advanced-ssh-config
+# https://ssh-vault.com/
+# https://github.com/arthepsy/ssh-audit
+# https://zssh.sourceforge.io/
+
   brew install autoconf
   brew install automake
   brew install cmake
   brew install diff-so-fancy
   brew install editorconfig
   brew install gdb
+  brew install swaks
+
   brew install hg
   brew install subversion
-  brew install swaks
 
   brew install graphviz
 
