@@ -42,5 +42,3 @@ p6df::modules::dev::external::brew() {
 p6df::modules::dev::init() {
 
 }
-
-p6df::modules::dev::init
