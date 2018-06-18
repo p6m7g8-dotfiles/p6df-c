@@ -39,6 +39,11 @@ p6df::modules::dev::external::brew() {
   brew install packer
 }
 
+p6df::modules::dev::home::symlink() {
+
+ # XXX: .ssh/config
+}
+
 p6df::modules::dev::init() {
 
 }
