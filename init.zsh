@@ -19,7 +19,6 @@ p6df::modules::dev::external::brew() {
   brew install swaks
 
   brew install hg
-  brew install subversion
 
   brew install graphviz
 
@@ -41,7 +40,8 @@ p6df::modules::dev::external::brew() {
 
 p6df::modules::dev::home::symlink() {
 
- # XXX: .ssh/config
+ # XXX: TODO .ssh/config
+ true;
 }
 
 p6df::modules::dev::init() {
