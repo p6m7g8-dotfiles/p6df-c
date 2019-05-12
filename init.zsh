@@ -1,5 +1,5 @@
 p6df::modules::dev::version() { echo "0.0.1" }
-p6df::modules::dev::deps()    { 
+p6df::modules::dev::deps()    {
 	ModuleDeps=()
 }
 
@@ -16,6 +16,7 @@ p6df::modules::dev::external::brew() {
   brew install diff-so-fancy
   brew install editorconfig
   brew install gdb
+  # echo "set startup-with-shell off" >> ~/.gdbinit
   brew install swaks
 
   brew install hg
@@ -30,8 +31,13 @@ p6df::modules::dev::external::brew() {
   brew install terraform
   brew install terraform-inventory
   brew install terraform-provisioner-ansible
-
+#Once installed a $HOME/.terraformrc file is used to enable the plugin:
+#
+#provisioners {
+#  ansible = "/usr/local/bin/terraform-provisioner-ansible"
+#}
   brew install consul
+#    consul agent -dev -advertise 127.0.0.1
   brew install consul-template
   brew install envconsul
 
