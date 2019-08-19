@@ -24,9 +24,6 @@ p6df::modules::dev::external::brew() {
   brew install graphviz
 
   brew install ansible
-  brew install docker
-  brew install docker-compose
-  brew install docker-machine
 
   brew install terraform
   brew install terraform-inventory
