@@ -25,14 +25,6 @@ p6df::modules::dev::external::brew() {
 
   brew install ansible
 
-  brew install terraform
-  brew install terraform-inventory
-  brew install terraform-provisioner-ansible
-#Once installed a $HOME/.terraformrc file is used to enable the plugin:
-#
-#provisioners {
-#  ansible = "/usr/local/bin/terraform-provisioner-ansible"
-#}
   brew install consul
 #    consul agent -dev -advertise 127.0.0.1
   brew install consul-template
