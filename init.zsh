@@ -6,12 +6,7 @@
 #
 #>
 ######################################################################
-p6df::modules::dev::deps()    {
-	ModuleDeps=(
-    p6m7g8/p6cicd
-    p6m7g8/p6test
-  )
-}
+p6df::modules::dev::deps() { ModuleDeps=() }
 
 ######################################################################
 #<
@@ -30,10 +25,8 @@ p6df::modules::dev::external::brew() {
   brew install autoconf
   brew install automake
   brew install cmake
-  brew install diff-so-fancy
   brew install editorconfig
-  brew install gdb
-  # echo "set startup-with-shell off" >> ~/.gdbinit
+  brew install gdb # echo "set startup-with-shell off" >> ~/.gdbinit
   brew install swaks
 
   brew install hg
@@ -42,8 +35,7 @@ p6df::modules::dev::external::brew() {
 
   brew install ansible
 
-  brew install consul
-#    consul agent -dev -advertise 127.0.0.1
+  brew install consul #    consul agent -dev -advertise 127.0.0.1
   brew install consul-template
   brew install envconsul
 
