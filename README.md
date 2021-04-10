@@ -1,10 +1,10 @@
-# p6df-dev
+# p6df-c
 
 ## Table of Contents
 
 
-### p6df-dev
-- [p6df-dev](#p6df-dev)
+### p6df-c
+- [p6df-c](#p6df-c)
   - [Badges](#badges)
   - [Distributions](#distributions)
   - [Summary](#summary)
@@ -17,12 +17,12 @@
 ### Badges
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/p6m7g8/p6df-dev)
-[![Mergify](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/p6m7g8/p6df-dev/&style=flat)](https://mergify.io)
-[![codecov](https://codecov.io/gh/p6m7g8/p6df-dev/branch/master/graph/badge.svg?token=14Yj1fZbew)](https://codecov.io/gh/p6m7g8/p6df-dev)
-[![Known Vulnerabilities](https://snyk.io/test/github/p6m7g8/p6df-dev/badge.svg?targetFile=package.json)](https://snyk.io/test/github/p6m7g8/p6df-dev?targetFile=package.json)
-[![Gihub repo dependents](https://badgen.net/github/dependents-repo/p6m7g8/p6df-dev)](https://github.com/p6m7g8/p6df-dev/network/dependents?dependent_type=REPOSITORY)
-[![Gihub package dependents](https://badgen.net/github/dependents-pkg/p6m7g8/p6df-dev)](https://github.com/p6m7g8/p6df-dev/network/dependents?dependent_type=PACKAGE)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/p6m7g8/p6df-c)
+[![Mergify](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/p6m7g8/p6df-c/&style=flat)](https://mergify.io)
+[![codecov](https://codecov.io/gh/p6m7g8/p6df-c/branch/master/graph/badge.svg?token=14Yj1fZbew)](https://codecov.io/gh/p6m7g8/p6df-c)
+[![Known Vulnerabilities](https://snyk.io/test/github/p6m7g8/p6df-c/badge.svg?targetFile=package.json)](https://snyk.io/test/github/p6m7g8/p6df-c?targetFile=package.json)
+[![Gihub repo dependents](https://badgen.net/github/dependents-repo/p6m7g8/p6df-c)](https://github.com/p6m7g8/p6df-c/network/dependents?dependent_type=REPOSITORY)
+[![Gihub package dependents](https://badgen.net/github/dependents-pkg/p6m7g8/p6df-c)](https://github.com/p6m7g8/p6df-c/network/dependents?dependent_type=PACKAGE)
 
 ## Summary
 
@@ -40,12 +40,12 @@
 
 ## Usage
 
-### p6df-dev:
+### p6df-c:
 
-#### p6df-dev/init.zsh:
+#### p6df-c/init.zsh:
 
-- p6df::modules::dev::deps()
-- p6df::modules::dev::external::brew()
+- p6df::modules::c::deps()
+- p6df::modules::c::external::brew()
 
 
 

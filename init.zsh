@@ -1,43 +1,26 @@
+# shellcheck shell=bash
+######################################################################
+#<
+#
+# Function: p6df::modules::c::deps()
+#
+#>
+######################################################################
+p6df::modules::c::deps() {
+  ModuleDeps=()
+}
 
 ######################################################################
 #<
 #
-# Function: p6df::modules::dev::deps()
+# Function: p6df::modules::c::external::brew()
 #
 #>
 ######################################################################
-p6df::modules::dev::deps() { ModuleDeps=() }
-
-######################################################################
-#<
-#
-# Function: p6df::modules::dev::external::brew()
-#
-#>
-######################################################################
-p6df::modules::dev::external::brew() {
-
-# https://github.com/moul/advanced-ssh-config
-# https://ssh-vault.com/
-# https://github.com/arthepsy/ssh-audit
-# https://zssh.sourceforge.io/
+p6df::modules::c::external::brew() {
 
   brew install autoconf
   brew install automake
   brew install cmake
-  brew install editorconfig
-  brew install gdb # echo "set startup-with-shell off" >> ~/.gdbinit
-  brew install swaks
-
-  brew install hg
-
-  brew install graphviz
-
-  brew install ansible
-
-  brew install consul #    consul agent -dev -advertise 127.0.0.1
-  brew install consul-template
-  brew install envconsul
-
-  brew install packer
+  brew install gdb
 }
