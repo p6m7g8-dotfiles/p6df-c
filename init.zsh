@@ -7,7 +7,9 @@
 #>
 ######################################################################
 p6df::modules::c::deps() {
-  ModuleDeps=(p6m7g8-dotfiles/p6common)
+  ModuleDeps=(
+    p6m7g8-dotfiles/p6common
+  )
 }
 
 ######################################################################
@@ -28,6 +30,8 @@ p6df::modules::c::vscodes() {
   code --install-extensionms-vscode.cpptools-themes
   code --install-extensionms-vscode.makefile-tools
   code --install-extensiontwxs.cmake
+
+  p6_return_void
 }
 
 ######################################################################
@@ -43,4 +47,6 @@ p6df::modules::c::external::brew() {
   brew install automake
   brew install cmake
   brew install gdb
+
+  p6_return_void
 }
