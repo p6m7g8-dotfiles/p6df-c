@@ -24,12 +24,12 @@ p6df::modules::c::vscodes() {
   code --install-extension cschlosser.doxdocgen
   code --install-extension jeff-hykin.better-cpp-syntax
   code --install-extension josetr.cmake-language-support-vscode
-  code --install-extensionms-vscode.cmake-tools
-  code --install-extensionms-vscode.cpptools
-  code --install-extensionms-vscode.cpptools-extension-pack
-  code --install-extensionms-vscode.cpptools-themes
-  code --install-extensionms-vscode.makefile-tools
-  code --install-extensiontwxs.cmake
+  code --install-extension ms-vscode.cmake-tools
+  code --install-extension ms-vscode.cpptools
+  code --install-extension ms-vscode.cpptools-extension-pack
+  code --install-extension ms-vscode.cpptools-themes
+  code --install-extension ms-vscode.makefile-tools
+  code --install-extension twxs.cmake
 
   p6_return_void
 }
