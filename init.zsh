@@ -43,10 +43,10 @@ p6df::modules::c::vscodes() {
 ######################################################################
 p6df::modules::c::external::brew() {
 
-  brew install autoconf
-  brew install automake
-  brew install cmake
-  brew install gdb
+  p6df::modules::homebrew::cli::brew::install autoconf
+  p6df::modules::homebrew::cli::brew::install automake
+  p6df::modules::homebrew::cli::brew::install cmake
+  p6df::modules::homebrew::cli::brew::install gdb
 
   p6_return_void
 }
