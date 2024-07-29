@@ -46,7 +46,7 @@ p6df::modules::c::external::brew() {
   p6df::modules::homebrew::cli::brew::install autoconf
   p6df::modules::homebrew::cli::brew::install automake
   p6df::modules::homebrew::cli::brew::install cmake
-  p6df::modules::homebrew::cli::brew::install gdb
+#  p6df::modules::homebrew::cli::brew::install gdb x86_64 w/ /usr/local only
 
   p6_return_void
 }
