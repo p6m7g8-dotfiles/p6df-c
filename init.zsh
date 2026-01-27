@@ -21,29 +21,41 @@ p6df::modules::c::deps() {
 ######################################################################
 p6df::modules::c::vscodes() {
 
-  code --install-extension llvm-vs-code-extensions.vscode-clangd
-  code --install-extension ms-vscode.cmake-tools
-  code --install-extension twxs.cmake
-  code --install-extension ms-vscode.makefile-tools
-  code --install-extension cschlosser.doxdocgen
-  code --install-extension jeff-hykin.better-cpp-syntax
+  p6df::modules::vscode::extension::install llvm-vs-code-extensions.vscode-clangd
+  p6df::modules::vscode::extension::install ms-vscode.cmake-tools
+  p6df::modules::vscode::extension::install twxs.cmake
+  p6df::modules::vscode::extension::install ms-vscode.makefile-tools
+  p6df::modules::vscode::extension::install cschlosser.doxdocgen
+  p6df::modules::vscode::extension::install jeff-hykin.better-cpp-syntax
 
   p6_return_void
 }
 
-#{
-#  "clangd.path": "clangd",
-#  "clangd.arguments": [
-#    "--background-index",
-#    "--clang-tidy",
-#    "--completion-style=detailed",
-#    "--header-insertion=iwyu",
-#    "--pch-storage=memory"
-#  ],
-#  "C_Cpp.intelliSenseEngine": "disabled",
-#  "C_Cpp.autocomplete": "disabled",
-#  "C_Cpp.errorSquiggles": "disabled"
-#}
+######################################################################
+#<
+#
+# Function: str json = p6df::modules::c::vscodes::config()
+#
+#  Returns:
+#	str - json
+#
+#>
+######################################################################
+p6df::modules::c::vscodes::config() {
+
+  cat <<'EOF'
+  "clangd.path": "clangd",
+  "clangd.arguments": [
+    "--background-index",
+    "--clang-tidy",
+    "--completion-style=detailed",
+    "--header-insertion=iwyu",
+    "--pch-storage=memory"
+  ]
+EOF
+
+  p6_return_void
+}
 
 ######################################################################
 #<
