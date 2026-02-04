@@ -38,6 +38,7 @@ TODO: Add a short summary of this module.
 - `p6df::modules::c::deps()`
 - `p6df::modules::c::external::brew()`
 - `p6df::modules::c::vscodes()`
+- `p6df::modules::c::vscodes::config()`
 
 ## Hierarchy
 
