@@ -41,7 +41,6 @@ p6df::modules::c::vscodes() {
 p6df::modules::c::vscodes::config() {
 
   cat <<'EOF'
-  "clangd.path": "clangd",
   "clangd.arguments": [
     "--background-index",
     "--clang-tidy",
