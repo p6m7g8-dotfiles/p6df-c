@@ -56,11 +56,11 @@ EOF
 ######################################################################
 #<
 #
-# Function: p6df::modules::c::external::brew()
+# Function: p6df::modules::c::external::brews()
 #
 #>
 ######################################################################
-p6df::modules::c::external::brew() {
+p6df::modules::c::external::brews() {
 
   p6df::core::homebrew::cli::brew::install autoconf
   p6df::core::homebrew::cli::brew::install automake
