@@ -69,3 +69,20 @@ p6df::modules::c::external::brews() {
 
   p6_return_void
 }
+
+######################################################################
+#<
+#
+# Function: words c $CC = p6df::modules::c::prompt::system()
+#
+#  Returns:
+#	words - c $CC
+#
+#  Environment:	 CC
+#>
+######################################################################
+p6df::modules::c::prompt::system() {
+
+  p6_return_words 'c' '$CC'
+}
+
