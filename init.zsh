@@ -83,6 +83,6 @@ p6df::modules::c::external::brews() {
 ######################################################################
 p6df::modules::c::prompt::system() {
 
-  p6_return_words 'c' '$CC'
+  p6_return_words 'c' "$"
 }
 
