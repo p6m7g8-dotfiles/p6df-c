@@ -15,6 +15,22 @@ p6df::modules::c::deps() {
 ######################################################################
 #<
 #
+# Function: p6df::modules::c::external::brews()
+#
+#>
+######################################################################
+p6df::modules::c::external::brews() {
+
+  p6df::core::homebrew::cli::brew::install autoconf
+  p6df::core::homebrew::cli::brew::install automake
+  p6df::core::homebrew::cli::brew::install cmake --formula
+#  p6df::core::homebrew::cli::brew::install gdb x86_64 w/ /usr/local only
+
+  p6_return_void
+}
+######################################################################
+#<
+#
 # Function: p6df::modules::c::vscodes()
 #
 #>
@@ -53,19 +69,3 @@ EOF
   p6_return_void
 }
 
-######################################################################
-#<
-#
-# Function: p6df::modules::c::external::brews()
-#
-#>
-######################################################################
-p6df::modules::c::external::brews() {
-
-  p6df::core::homebrew::cli::brew::install autoconf
-  p6df::core::homebrew::cli::brew::install automake
-  p6df::core::homebrew::cli::brew::install cmake --formula
-#  p6df::core::homebrew::cli::brew::install gdb x86_64 w/ /usr/local only
-
-  p6_return_void
-}
