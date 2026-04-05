@@ -1,11 +1,5 @@
 # shellcheck shell=bash
 ######################################################################
-#<
-#
-# Function: p6df::modules::c::deps()
-#
-#>
-######################################################################
 p6df::modules::c::deps() {
   ModuleDeps=(
     p6m7g8-dotfiles/p6common
@@ -13,11 +7,15 @@ p6df::modules::c::deps() {
 }
 
 ######################################################################
-#<
-#
-# Function: p6df::modules::c::vscodes()
-#
-#>
+p6df::modules::c::external::brews() {
+
+  p6df::core::homebrew::cli::brew::install autoconf
+  p6df::core::homebrew::cli::brew::install automake
+  p6df::core::homebrew::cli::brew::install cmake --formula
+#  p6df::core::homebrew::cli::brew::install gdb x86_64 w/ /usr/local only
+
+  p6_return_void
+}
 ######################################################################
 p6df::modules::c::vscodes() {
 
@@ -31,12 +29,6 @@ p6df::modules::c::vscodes() {
   p6_return_void
 }
 
-######################################################################
-#<
-#
-# Function: p6df::modules::c::vscodes::config()
-#
-#>
 ######################################################################
 p6df::modules::c::vscodes::config() {
 
@@ -56,16 +48,24 @@ EOF
 ######################################################################
 #<
 #
-# Function: p6df::modules::c::external::brews()
+# Function: p6df::modules::c::deps()
 #
 #>
 ######################################################################
-p6df::modules::c::external::brews() {
-
-  p6df::core::homebrew::cli::brew::install autoconf
-  p6df::core::homebrew::cli::brew::install automake
-  p6df::core::homebrew::cli::brew::install cmake --formula
-#  p6df::core::homebrew::cli::brew::install gdb x86_64 w/ /usr/local only
-
-  p6_return_void
-}
+#<
+#
+# Function: p6df::modules::c::vscodes()
+#
+#>
+######################################################################
+#<
+#
+# Function: p6df::modules::c::vscodes::config()
+#
+#>
+######################################################################
+#<
+#
+# Function: p6df::modules::c::external::brews()
+#
+#>
